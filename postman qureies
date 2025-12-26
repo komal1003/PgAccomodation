@@ -1,0 +1,40 @@
+for swagger
+http://localhost:8085/swagger-ui/index.html#/city-controller/getCityById
+
+
+for postman
+
+
+http://localhost:8085/owner/places/delete/4
+delete
+
+put
+{
+    "pgid":1,
+  "builtUpArea": 1350,
+  "locality": "Whitefield",
+  "rent": 9500,
+  "status": "AVAILABLE",
+  "visitorCount": 0
+}
+http://localhost:8085/owner/places/edit 
+
+
+post 
+
+http://localhost:8085/owner/places/add
+{
+  "builtUpArea": 1200,
+  "locality": "Whitefield",
+  "registrationNumber": "PGWB101",
+  "rent": 9000,
+  "status": "AVAILABLE",
+  "visitorCount": 0,
+  "city": {
+    "cityId": 1
+  },
+  "owner": {
+    "ownerid": 1
+  }
+}
+
